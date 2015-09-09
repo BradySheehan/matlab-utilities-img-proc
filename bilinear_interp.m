@@ -12,13 +12,8 @@
 %
 % pass in the image, 4 points, and the xy location to interpolate
 % this assumes the image is mxn
-% z
+% 
 function newz = bilinear_interp(f00, f10,f01,f11, x, y, sf)
-% need to pass in 4 corner points of a patch
-% and compute the A(x,y) and the B(x,y) where A(x,y) is the polynomial for
-% the x locations and B(x,y) is the polynomial for the y locations then for
-% testing pass in one of the endpoints and make sure that I get that end
-% point back
 % f(x,y) = [ (1 - x) x][f00 f01; f10 f11][(1-y); y];
 
 % assumes linear model
